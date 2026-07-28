@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Research Committee</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f7fb;
+    font-family:Inter,Segoe UI,Arial,sans-serif;
+    color:#243447;
+}
+
+.container{
+    max-width:760px;
+    margin:70px auto;
+    background:white;
+    border-radius:18px;
+    padding:50px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.badge{
+    display:inline-block;
+    background:#e8f5e9;
+    color:#2e7d32;
+    padding:8px 14px;
+    border-radius:999px;
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#667085;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.card{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:24px;
+    border-radius:12px;
+    margin-bottom:35px;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+ul{
+    margin-left:22px;
+    line-height:1.9;
+}
+
+button{
+    margin-top:40px;
+    padding:14px 24px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.success{
+    display:none;
+    margin-top:30px;
+    padding:18px;
+    background:#ecfdf3;
+    border-radius:10px;
+    color:#166534;
+    font-weight:600;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="badge">
+✔ Invitation Approved
+</div>
+
+<h1>Welcome on board, Kia 👋</h1>
+
+<p class="subtitle">
+The Scientific Committee is pleased to welcome you as an official member of the research team.
+</p>
+
+<div class="card">
+
+<h2>Research Project</h2>
+
+<p>
+<b>Finding a one-hour free slot in the calendar of an HR International & Global Mobility Senior Specialist.</b>
+</p>
+
+<br>
+
+<p>
+Your contribution has been considered valuable enough to officially join the investigation.
+The committee sincerely hopes your expertise will increase the probability of success, currently estimated at approximately <b>0.002%</b>.
+</p>
+
+</div>
+
+<h2>Current objectives</h2>
+
+<ul>
+<li>Identify a continuous 60-minute availability.</li>
+<li>Prevent all 1,200 people from having an urgent issue simultaneously.</li>
+<li>Validate whether such a time slot actually exists.</li>
+</ul>
+
+<button id="join" onclick="acceptInvitation()">
+Accept Appointment
+</button>
+
+<div class="success" id="success">
+🎉 Appointment confirmed.
+
+Welcome to the committee.
+
+The research officially begins now.
+</div>
+
+</div>
+
+<script>
+function acceptInvitation(){
+
+document.getElementById("join").style.display="none";
+document.getElementById("success").style.display="block";
+
+}
+</script>
+
+</body>
+</html>
