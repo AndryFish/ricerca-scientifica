@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Research Committee</title>
+<title>Research Committee Portal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -14,148 +19,401 @@
 }
 
 body{
-    background:#f5f7fb;
-    font-family:Inter,Segoe UI,Arial,sans-serif;
+
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#eef3f8;
     color:#243447;
+
 }
 
-.container{
-    max-width:760px;
-    margin:70px auto;
+.wrapper{
+
+    max-width:900px;
+    margin:60px auto;
+    padding:20px;
+
+}
+
+.header{
+
     background:white;
     border-radius:18px;
-    padding:50px;
-    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    padding:40px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    margin-bottom:25px;
+
 }
 
 .badge{
+
     display:inline-block;
-    background:#e8f5e9;
-    color:#2e7d32;
-    padding:8px 14px;
-    border-radius:999px;
+    background:#e8f7ee;
+    color:#1d7a46;
     font-weight:600;
-    margin-bottom:30px;
+    padding:8px 16px;
+    border-radius:999px;
+    margin-bottom:20px;
+
 }
 
 h1{
-    font-size:40px;
+
+    font-size:42px;
     margin-bottom:10px;
+
 }
 
 .subtitle{
+
     color:#667085;
     font-size:18px;
-    margin-bottom:35px;
+
 }
 
 .card{
-    background:#f8fafc;
-    border-left:5px solid #2563eb;
-    padding:24px;
-    border-radius:12px;
-    margin-bottom:35px;
+
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
 }
 
 .card h2{
-    margin-bottom:10px;
+
+    margin-bottom:20px;
+
+}
+
+.info{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+
+}
+
+.box{
+
+    background:#f8fafc;
+    border-radius:12px;
+    padding:18px;
+
+}
+
+.label{
+
+    color:#6b7280;
+    font-size:.82rem;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+
+}
+
+.value{
+
+    margin-top:6px;
+    font-size:1.05rem;
+    font-weight:600;
+
 }
 
 ul{
-    margin-left:22px;
-    line-height:1.9;
+
+    margin-left:20px;
+    line-height:2;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+td{
+
+    padding:14px 0;
+    border-bottom:1px solid #ececec;
+
+}
+
+.quote{
+
+    margin-top:20px;
+    padding:20px;
+    background:#f5f7fb;
+    border-left:4px solid #2563eb;
+    font-style:italic;
+
 }
 
 button{
-    margin-top:40px;
-    padding:14px 24px;
-    border:none;
-    border-radius:10px;
+
+    margin-top:30px;
     background:#2563eb;
     color:white;
+    border:none;
+    padding:15px 26px;
+    border-radius:10px;
     font-size:16px;
     cursor:pointer;
     transition:.2s;
+
 }
 
 button:hover{
+
     background:#1d4ed8;
+
 }
 
-.success{
+#confirmation{
+
     display:none;
-    margin-top:30px;
-    padding:18px;
+    margin-top:25px;
+    padding:22px;
     background:#ecfdf3;
-    border-radius:10px;
+    border-radius:12px;
     color:#166534;
-    font-weight:600;
+
 }
+
+.footer{
+
+    text-align:center;
+    color:#94a3b8;
+    margin-top:40px;
+    font-size:.9rem;
+
+}
+
+@media(max-width:700px){
+
+.info{
+
+grid-template-columns:1fr;
+
+}
+
+h1{
+
+font-size:34px;
+
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="container">
+<div class="wrapper">
+
+<div class="header">
 
 <div class="badge">
-✔ Invitation Approved
+Invitation Approved
 </div>
 
-<h1>Welcome on board, Kia 👋</h1>
+<h1>Welcome on board, Kia.</h1>
 
 <p class="subtitle">
-The Scientific Committee is pleased to welcome you as an official member of the research team.
+Your application has been successfully reviewed and approved by the Scientific Committee.
 </p>
+
+</div>
+
 
 <div class="card">
 
-<h2>Research Project</h2>
+<h2>Research Program</h2>
+
+<div class="info">
+
+<div class="box">
+
+<div class="label">Project</div>
+
+<div class="value">
+Finding a stable 60-minute free slot in the calendar of an HR International & Global Mobility Senior Specialist.
+</div>
+
+</div>
+
+<div class="box">
+
+<div class="label">Current Success Rate</div>
+
+<div class="value">
+0.002%
+</div>
+
+</div>
+
+<div class="box">
+
+<div class="label">Research Status</div>
+
+<div class="value">
+In Progress
+</div>
+
+</div>
+
+<div class="box">
+
+<div class="label">Membership Status</div>
+
+<div class="value">
+Active
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>Assigned Role</h2>
 
 <p>
-<b>Finding a one-hour free slot in the calendar of an HR International & Global Mobility Senior Specialist.</b>
+<b>External Scientific Advisor</b>
 </p>
 
 <br>
 
 <p>
-Your contribution has been considered valuable enough to officially join the investigation.
-The committee sincerely hopes your expertise will increase the probability of success, currently estimated at approximately <b>0.002%</b>.
+Your contribution has been deemed essential for the advancement of the research.
+As an Advisor, you are expected to challenge assumptions, evaluate hypotheses and participate in strategic committee meetings whenever required.
 </p>
 
 </div>
 
-<h2>Current objectives</h2>
 
-<ul>
-<li>Identify a continuous 60-minute availability.</li>
-<li>Prevent all 1,200 people from having an urgent issue simultaneously.</li>
-<li>Validate whether such a time slot actually exists.</li>
-</ul>
+<div class="card">
 
-<button id="join" onclick="acceptInvitation()">
+<h2>Membership Privileges</h2>
+
+<table>
+
+<tr>
+<td>Access to confidential research findings</td>
+<td align="right">Granted</td>
+</tr>
+
+<tr>
+<td>Voting rights on scientific hypotheses</td>
+<td align="right">Granted</td>
+</tr>
+
+<tr>
+<td>Invitation to strategic committee meetings</td>
+<td align="right">Granted</td>
+</tr>
+
+<tr>
+<td>One complimentary glass of wine during meetings</td>
+<td align="right">Granted</td>
+</tr>
+
+<tr>
+<td>Right to question unrealistic HR timelines</td>
+<td align="right">Unlimited</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="card">
+
+<h2>Committee Members</h2>
+
+<table>
+
+<tr>
+<td>F.</td>
+<td align="right">Principal Investigator</td>
+</tr>
+
+<tr>
+<td>Kia</td>
+<td align="right">External Scientific Advisor</td>
+</tr>
+
+</table>
+
+<div class="quote">
+
+Can an HR International & Global Mobility Senior Specialist actually find one uninterrupted hour of free time?
+
+<br><br>
+
+Current evidence remains inconclusive.
+
+</div>
+
+<button id="acceptButton" onclick="acceptAppointment()">
 Accept Appointment
 </button>
 
-<div class="success" id="success">
-🎉 Appointment confirmed.
+<div id="confirmation">
+
+<h3>Appointment Confirmed</h3>
+
+<br>
 
 Welcome to the committee.
 
-The research officially begins now.
+<br><br>
+
+Your appointment is now active.
+
+<br><br>
+
+The Principal Investigator has been notified.
+
+<br><br>
+
+<b>Next step</b>
+
+<br>
+
+The committee will contact you when the first field experiment is scheduled.
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+Scientific Committee Research Portal • Internal Use Only
+
 </div>
 
 </div>
 
 <script>
-function acceptInvitation(){
 
-document.getElementById("join").style.display="none";
-document.getElementById("success").style.display="block";
+function acceptAppointment(){
+
+document.getElementById("acceptButton").style.display="none";
+document.getElementById("confirmation").style.display="block";
 
 }
+
 </script>
 
 </body>
+
 </html>
